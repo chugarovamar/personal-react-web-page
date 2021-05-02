@@ -1,0 +1,108 @@
+.footer {
+background-position: left;
+background-repeat:repeat-y;
+background-size: 26%;
+}
+.footer-contacts__headline {
+    font-size: 32px;
+}
+
+.footer-contacts__icon {
+font-size: 24px;
+color: rgb(97, 97, 97);
+}
+.footer-links__icon {
+    font-size: 27px;
+    color: rgb(97, 97, 97);
+    transition: color .4s ease-in-out; 
+}
+.footer-links__icon:hover {
+    color: rgb(226, 138, 138);
+}
+
+.footer-contacts__icon-name {
+    font-size: 18px;
+}
+.footer-contacts a {
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgb(97, 97, 97);
+    transition: color .4s ease-in-out;   
+}
+.footer-contacts a:hover {
+    color: rgb(226, 138, 138);
+    
+}
+
+.footer-contacts__image-section{
+  justify-content: flex-end;
+}
+.footer-contacts__mail-section {
+    align-items: flex-start;
+    
+}
+.footer-contacts{
+    justify-content: center;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .footer {
+        background-size: 35%;
+    }  
+    .footer-contacts__headline {
+        font-size: 25px;
+         
+        }
+    .footer-contacts__icon {
+        font-size: 22px;
+         
+    }
+    .footer-contacts__image-section{
+        justify-content: center;
+
+      }
+    .footer-contacts__mail-section {
+        align-items: center; 
+        margin-top: 25px;
+      }
+      
+    }
+ @media (max-width: 767px) {
+    .footer {
+        background-size: 35%;
+        background-repeat: no-repeat;
+    }
+    .footer-contacts__headline {
+        font-size:26px ;
+    }
+    .footer-contacts__icon {
+         font-size: 22px;
+         
+    }
+    .footer-contacts__icon-name{
+        font-size: 18px;
+     }
+     .footer-contacts__image-section{
+        justify-content: center;
+
+      }
+    .footer-contacts__mail-section {
+        align-items: center; 
+        margin-top: 25px;
+      }
+ }
+ @media (max-width: 480px) {
+    .footer{
+    background-size: 45%;
+    background-repeat: no-repeat;
+}
+.footer-contacts__headline {
+    font-size:22px ;
+    }    
+.footer-contacts__icon {
+    font-size: 20px;
+}
+.footer-contacts__icon-name {
+    font-size: 16px;
+}
+}

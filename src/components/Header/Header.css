@@ -1,0 +1,9 @@
+.header__nav-link {
+    color: rgb(136, 136, 136);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.header__nav-link:hover {
+    color: rgb(226, 138, 138) !important;
+}
