@@ -3,6 +3,7 @@
     max-width: 50%;
   align-self: center;
 }
+
 @media (max-width: 767px) {
   .Gallery__headline {
  font-size: 34px;
@@ -16,25 +17,17 @@
     font-size: 28px;
    }
 }
-@media (max-width:1238px){
+@media (max-width:1339px){
   .img-600{
-    max-width: 550px;
+    max-width: 600px;
   }
   .img-1200{
-    max-width: 1100px;
+    max-width: 1200px;
   }
  
 }
-@media (max-width:1147px){
-  .img-600{
-    max-width: 520px;
-  }
-  .img-1200{
-    max-width: 1040px;
-  }
- 
-}
-@media (max-width:1129px){
+
+@media (max-width:1229px){
   .img-600{
     max-width: 450px;
   }

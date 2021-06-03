@@ -1,37 +1,38 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css'
-import { Navbar,Col,Row,Container, Nav, NavItem, NavLink} from 'react-bootstrap';
-
+import { Navbar,Col,Row,Container, Nav,NavLink} from 'react-bootstrap';
+import { Link } from 'react-router-dom'
+import routes from '../routes'
 
 
 function Header(){
+
     return(
 <Container fluid  className ='header '>
     <Row >    
     <Col className='mx-0 my-2 '>
-    <Navbar  collapseOnSelect expand="lg">
-    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-    <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav fill variant='tabs' className=' justify-content-around w-100 my-2'  >
+    <Navbar fixed= 'top' collapseOnSelect expand="lg" fill='true' className='header-bar pt-1' >
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav variant='tabs' className="justify-content-around w-100 mt-1">
+    {routes.map(route=>(
+    <NavLink 
+    className='header__nav-link  pt-2 pb-2'
+         href={route.path}
+        key={route.path}
+        to={route.path}
+         exact ="true"
+         as={Link}>
+            {route.name}
         
-        <NavItem  >
-          <NavLink className='header__nav-link  pb-2'  eventKey='/service'>Услуги</NavLink>
-        </NavItem>  
-         <NavItem  >
-            <NavLink className='header__nav-link   pb-2'  eventKey='/gallery'>Галерея</NavLink>
-        </NavItem>
+      </NavLink>
+    ))}
       
-        <NavItem >
-            <NavLink className='header__nav-link  pb-2'  href='/price'>Стоимость</NavLink>
-        </NavItem>
-        <NavItem   >
-            <NavLink className='header__nav-link   pb-2'  eventKey='/contacts'>Контакты</NavLink>
-        </NavItem>
-        
     </Nav>
-    </Navbar.Collapse>
-    </Navbar>
+  </Navbar.Collapse>
+</Navbar>
+  
    </Col>
    </Row>
 </Container>
@@ -40,3 +41,6 @@ function Header(){
     
 }
 export default Header
+
+
+ 

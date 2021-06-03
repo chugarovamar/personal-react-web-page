@@ -1,7 +1,8 @@
 .footer {
-background-position: left;
-background-repeat:repeat-y;
-background-size: 26%;
+background-position-x: left;
+background-repeat:no-repeat;
+background-position-y: center;
+background-size: 22%;
 }
 .footer-contacts__headline {
     font-size: 32px;
@@ -12,7 +13,7 @@ font-size: 24px;
 color: rgb(97, 97, 97);
 }
 .footer-links__icon {
-    font-size: 27px;
+    font-size: 30px;
     color: rgb(97, 97, 97);
     transition: color .4s ease-in-out; 
 }
@@ -47,7 +48,8 @@ color: rgb(97, 97, 97);
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .footer {
-        background-size: 35%;
+        background-size: 30%;
+        
     }  
     .footer-contacts__headline {
         font-size: 25px;
@@ -71,6 +73,7 @@ color: rgb(97, 97, 97);
     .footer {
         background-size: 35%;
         background-repeat: no-repeat;
+        background-position-y: top;
     }
     .footer-contacts__headline {
         font-size:26px ;
@@ -93,11 +96,13 @@ color: rgb(97, 97, 97);
  }
  @media (max-width: 480px) {
     .footer{
-    background-size: 45%;
+    background-size: 35%;
     background-repeat: no-repeat;
+    background-position-y: top;
 }
 .footer-contacts__headline {
     font-size:22px ;
+    
     }    
 .footer-contacts__icon {
     font-size: 20px;

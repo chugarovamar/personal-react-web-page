@@ -12,9 +12,9 @@ function Contacts (){
 return (
 <div className='footer' style={{ backgroundImage: "url(/3.jpg)" }} >
 <Container >
-  <Row className='footer-contacts py-5 mt-5 '>
+  <Row className='footer-contacts py-3 mt-3 '>
     <Col lg={6} md={12} sm={12}  className='footer-contacts__image-section d-flex   '>
-    <Image src='IMG_2830.jpg' className='w-25 ' roundedCircle/>
+    <Image src='IMG_2830.jpg' className='w-25 h-100' roundedCircle/>
     </Col>
     <Col lg={6} md={12} sm={12}  className='footer-contacts__mail-section d-flex flex-column pl-4  '>
     <h2 className='mb-3 footer-contacts__headline'>Marina Chugarova</h2>

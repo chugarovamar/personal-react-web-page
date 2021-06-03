@@ -3,7 +3,21 @@
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 1px;
+    
 }
 .header__nav-link:hover {
-    color: rgb(226, 138, 138) !important;
+    color: rgb(218, 141, 154) !important;
+    text-decoration: none;
+}
+
+
+.header-bar{
+    background-color: #fff;
+  padding-bottom: 0;
+}
+@media(max-width:991px){
+    .header__nav-link {
+        padding-bottom: 10px;
+    }
+
 }
